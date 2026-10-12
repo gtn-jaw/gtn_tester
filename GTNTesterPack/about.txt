@@ -1,0 +1,25 @@
+Program służy do uruchamiania kodu, programu .exe, na kilku testach za pomocą jednego kliknięcia. Aby móc z niego skorzystać potrzeba mieć odpowiednią strukturę plików oraz niektóre foldery potrzebują konkretnej nazwy. Program został przystosowany do Visual Studio Community 2026.
+
+Układ folderów:
+folder_główny/
+├── x64/
+│ └── Debug/
+└── tests/
+├── in/
+└── out/
+
+Plik .exe powinien być w folderze Debug/
+
+Testy dzielą się na wejście oraz wyjście, oraz powinny znajdować się w folderach in/, oraz out/ odpowiednio z rozszerzeniami .in, oraz .out
+
+Dla każdego pliku test.in musi istnieć odpowiadający mu test.out o tej samej nazwie bez rozszerzenia.
+
+Ważne jest, że wyniki (wyjście programu .exe oraz .out) są porównywane znak po znaku. Końcowe białe znaki są ignorowane.
+
+Na początku uruchomienia programu należy otworzyć główny folder programu.
+
+Pod przyciskiem 'Info' będą wyświetlane dane o folderze lub tuż po uruchomieniu streszczenie zasad działania.
+
+Po utworzeniu nowych testów należy uruchomić program ponownie, w celu ich załadowania.
+
+Aby uruchomić wszystkie testy, kliknij 'Uruchom testy'
